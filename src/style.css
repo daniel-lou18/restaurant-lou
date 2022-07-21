@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./roboto-v30-latin-regular.woff2') format('woff2'),
+    url('./roboto-v30-latin-regular.woff') format('woff');
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#content {
+  max-width: 50vw;
+  background-color: rgba(221, 155, 165, 0.7);
+  padding-top: 20px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('bruna-branco-Uq5i5_cQdr8-unsplash.jpg');
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+div.logo, div.title {
+  display: flex;
+  justify-content: center;
+}
+
+div.title {
+  letter-spacing: 0.15rem;
+}
+
+div.description {
+  padding: 40px 50px;
+}
+
+p {
+  font-size: large;
+  font-weight: 550;
+  letter-spacing: 0.15rem;
+  margin-bottom: 30px;
+}
+
+div.menu-content {
+  display: flex;
+}
+
+p.food {
+  text-transform: capitalize;
+}
+
+p.price::after {
+  content: ' €';
+  font-size: 1rem;
+}
+
+div.tab-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: rgba(240, 128, 128, 0.3);
+  font-size: medium;
+  font-weight: 500;
+  letter-spacing: 0.10rem;
+}
+
+button:hover {
+  background-color: rgba(240, 128, 128, 0.8);
+  cursor: grab;
+}
+
+.selected {
+  background-color: rgba(240, 128, 128, 0.8);
+}
